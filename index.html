@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!--this file was created while following a freecodecamp.org class with the intent to create a survey form-->
+
+<html lang="en">
+  <head>
+    <!--meta info-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <main>
+  <body>
+
+    <!--header with a title and a description-->
+    <header>
+    <h1 id="title">Test Survey Form</h1>
+    <p id="description">Please fill out this form to help me improve my skills.</p>
+    </header>
+
+    <!--start of the form-->
+    <form id="survey-form">
+
+      <!--first fieldset containing two questions with required input-->
+      <fieldset>
+        <legend>Let's get to know each other better!</legend>
+      <label for="name" id="name-label">
+        Please tell me your name:
+        <input type="text" placeholder="type in your name" name="name-input" id="name" required/>
+        </label>
+      <label for="email" id="email-label">
+        And your email: <input type="email" placeholder="type in a valid email address" name="email-input" id="email" required/>
+        </label>
+      </fieldset>
+
+      <!--second fieldset containing one question with a type of number-->
+      <fieldset>
+        <legend>Now, this is my first designed form. 
+          What did you think of it?</legend>
+      <label for="number" id="number-label">
+        On a scale of 1 to 10, 
+        how much did you like this form's design?
+        <input type="number" id="number" min="1" max="10" 
+        placeholder="select or type a number" name="number-input"/>
+        </label>
+      </fieldset>
+
+      <!--third fieldset containing one dropdown question-->
+      <fieldset>
+        <legend>Did you like the colors 
+          used in this page?</legend>
+        <label for="dropdown" id="dropdown-label">
+          <select id="dropdown" name="dropdown-menu">
+            <option value="uns-colors" class="options">Unsure</option>
+            <option value="yes-colors" class="options">Yes</option>
+            <option value="no-colors" class="options">No</option>
+          </select>
+        </label>
+        </fieldset>
+
+        <!--fourth fieldset containing a radio button yes/no question-->
+        <fieldset class="radio-buttons">
+        <legend>Would you hire me 
+          to design your forms? (select one)</legend>
+        <label for="radio-yes" id="yes-label"><input type="radio" id="radio-choice" name="choice" value="yes-hire" checked/>Yes</label><br>
+        <label for="radio-choice" id="no-label"><input type="radio" id="radio-no" name="choice" value="no-hire"/> No</label>
+        </fieldset>
+
+        <!--fifth fieldset containing an optional textarea-->
+        <fieldset>
+        <label>Can you elaborate on 
+          why you chose that option? (optional) 
+          <textarea name="optional-elaborate" placeholder="I would/wouldn't hire you because..."></textarea>
+          </label>
+      </fieldset>
+
+      <!--sixth fieldset containing checkboxes-->
+      <fieldset class="checkboxes">
+        <legend>Mark any concepts you think 
+          I could improve on if applicable 
+          (select all that apply)</legend>
+        <label><input type="checkbox" id="checkbox0" value="acces" class="inline"/> Accessibility</label><br>
+        <label><input type="checkbox" id="checkbox1" value="clrtheory" class="inline"/> Color theory</label><br>
+        <label><input type="checkbox" id="checkbox2" value="read" class="inline"/> Readability</label><br>
+        <label>
+          <input type="checkbox" id="checkbox3" value="concis" class="inline"/> Conciseness</label><br>
+        <label><input type="checkbox" id="checkbox4" value="other" class="inline"/> Others</label><br>
+        <label>
+          <input type="checkbox" id="checkbox5" value="none" class="inline"/> None - everything is great!</label>
+      </fieldset><br>
+
+      <!--submit button and thanks-->
+        <label id="thanks">Thank you! Click the button below to submit the form. <br><input id="submit" type="submit" value="Submit"/></label>
+        <div class="disclaimer"><p>disclaimer: this form does NOT work! it is only used for test purposes.</p>
+        </div>
+    </form>
+  </body>
+  <!--invisible divider added for alignment-->
+  <div class="divider"></div>
+  </main>
+</html>

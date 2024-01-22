@@ -1,0 +1,92 @@
+header {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  }
+
+  h1 {
+    color: #ffd092;
+    font-family: Impact, Arial, sans-serif;
+  }
+
+  #description {
+    color: #fff0dd;
+    font-size: 20px;
+  }
+
+body {
+  background-color: #104352;
+  font-family: Cambria, Cochin, serif;
+  font-size: 17px;
+  width: 60%;
+  min-width: 300px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form {
+  background-color: #ffd092;
+  padding: 10% 10% 2% 10%;
+  border-radius: 20px;
+  
+}
+
+legend, input, textarea {
+  font-size: 15px;
+  font-style: italic;
+  font-family: Cambria, Cochin, serif;
+  background-color: #a5b8be;
+  padding: 1%;
+  border-radius: 10px;
+  border: 1px solid #104352;
+}
+
+#name, #email, textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#number, select {
+  display: block;
+  width: 45%;
+  margin: 10px 0;
+  min-width: 180px;
+}
+
+.inline {
+  display: inline;
+  width: unset;
+  margin: 5px; 
+}
+
+select {
+  background-color: #cfdabb;
+  border: 1px solid #104352;
+  border-radius: 10px;
+}
+
+#radio-buttons, label, legend, input {
+  display: block-inline;
+}
+
+#submit {
+  margin: 10px 0;
+}
+
+fieldset {
+  border: 1px solid #104352;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+textarea {
+  height: 80px;
+}
+
+.disclaimer {
+  font-size: 10px;
+}
+
+.divider {
+  margin-bottom: 50px;
+}
